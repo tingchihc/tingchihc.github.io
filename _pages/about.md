@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Tingchih Chen"
+title: "Ting-Chih Chen"
 author_profile: true
 redirect_from: 
   - /about/
