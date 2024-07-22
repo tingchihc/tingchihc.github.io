@@ -7,5 +7,4 @@ redirect_from:
   - /about.html
 ---
 
-Ting-Chih Chen was a master's degree student in the Department of Computer Science. His advisor was Chris Thomas. Chen worked at the computer vision lab and his research interests include artificial intelligence, natural language processing, and computer vision. His research focuses on multimodal knowledge representation and hypothesis generation from heterogenous multimedia sources.  
-
+Ting-Chih is a MS student in the Department of Computer Science at Virginia Tech, under the guidance of Professor Chris Thomas, focuses on detecting disinformation. His research interests encompass AI, NLP, and CV. In the Virginia Tech, he is working on "When Trust is a Factor" project, his work is mainly to develop the language models with RLHF and PPO. In addition, he worked on integrated the cross-modalities information in the knowledge graph to detect the disinformation. The goal is trying to figure out which tuples are real or fake to finish the fine-grained level entailment.
