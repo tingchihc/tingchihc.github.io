@@ -10,7 +10,7 @@ author_profile: true
 
   <ul>
   
-  <li><div class="wordwrap"> <b>Ting-Chih Chen</b>, Chia-Wei Tang and Chris Thomas. MetaSumPerceiver: Multimodal Multi-Document Evidence Summarization for Fact-Checking. ACL'24. <a href="https://arxiv.org/abs/2407.13089">[arxiv]</a></div></li>
+  <li><div class="wordwrap"> <b>Ting-Chih Chen</b>, Chia-Wei Tang and Chris Thomas. MetaSumPerceiver: Multimodal Multi-Document Evidence Summarization for Fact-Checking. ACL'24. <a href="https://arxiv.org/abs/2407.13089">[arxiv]</a></div></li> <a href="https://aclanthology.org/2024.acl-long.474/">[paper]</a></div></li>
   
   <li><div class="wordwrap"> <b>Ting-Chih Chen</b>. Multimodal Multi-Document Evidence Summarization For Fact-Checking. MS thesis. <a href="files/VT_Ting_THESIS.pdf">[Paper]</a></div></li>
   
