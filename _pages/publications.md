@@ -14,9 +14,9 @@ author_profile: true
   
   <li><div class="wordwrap"> <b>Ting-Chih Chen</b>, Chia-Wei Tang and Chris Thomas. MetaSumPerceiver: Multimodal Multi-Document Evidence Summarization for Fact-Checking. ACL'24. <a href="https://arxiv.org/abs/2407.13089">[arxiv]</a> <a href="https://aclanthology.org/2024.acl-long.474/">[paper]</a></div></li>
   
-  <li><div class="wordwrap"> <b>Ting-Chih Chen</b>. Multimodal Multi-Document Evidence Summarization For Fact-Checking. MS thesis. <a href="files/VT_Ting_THESIS.pdf">[Paper]</a></div></li>
+  <li><div class="wordwrap"> <b>Ting-Chih Chen</b>. Multimodal Multi-Document Evidence Summarization For Fact-Checking. MS thesis. <a href="files/VT_Ting_THESIS.pdf">[paper]</a></div></li>
   
-  <li><div class="wordwrap"> <b>Ting-Chih Chen</b> and Chin-I Lee. Application of LSTM Neural Network in Stock Price Movement Forecasting with Technical Analysis Index. IAM'20. <a href="files/IAM2020.pdf">[Paper]</a></div></li>
+  <li><div class="wordwrap"> <b>Ting-Chih Chen</b> and Chin-I Lee. Application of LSTM Neural Network in Stock Price Movement Forecasting with Technical Analysis Index. IAM'20. <a href="files/IAM2020.pdf">[paper]</a></div></li>
 
   </ul>
   
