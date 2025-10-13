@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title> PR SimMMDG </title>
+<title> [PR] SimMMDG </title>
 <meta name="author" content="Ting-Chih Chen">
 <meta name="description" content="this is what included pseudo code could look like">
 <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
@@ -52,13 +52,97 @@
 <div class="container mt-5" role="main">
     <div class="post">
     <header class="post-header">
-        <h1 class="post-title">PR SimMMDG</h1>
+        <h1 class="post-title">[PR] SimMMDG</h1>
         <p class="post-meta"> Created in October, 2025 </p>
     </header>
     
     <article class="post-content">
-        <div id="markdown-content">
+        <div class="paper-content">
+
+  <h2>SimMMDG: A Simple and Effective Framework for Multi-modal Domain Generalization</h2>
+
+  <h3>Summary:</h3>
+  <p>
+    This paper addresses the challenge of domain generalization in multimodal settings, aiming to enable models to perform robustly on unseen domains and distributions. 
+    To achieve this, the authors propose a framework that splits features into <strong>modality-specific</strong> and <strong>modality-shared</strong> components. 
+    The method encourages the model to align modality-shared features from different modalities and source domains that share the same label, bringing them close together in the embedding space. 
+    Simultaneously, it enforces modality-specific features to be as distinct as possible from the shared features, promoting the preservation of unique information from each modality. 
+    Additionally, the framework introduces a cross-modal translation module, which not only aligns information across modalities but also enables the reconstruction or prediction of one modality’s features from another, further enhancing generalization and robustness to missing modalities.
+  </p>
+
+  <hr>
+
+  <h3>Relation to prior work</h3>
+  <p>
+    This research area aims to equip models with domain generalization capabilities. To achieve this, prior work has primarily focused on three directions: 
+    <strong>data manipulation</strong>, <strong>representation learning</strong>, and <strong>learning strategies</strong>. 
+    Data manipulation techniques augment the diversity of training data, enabling models to learn from a broader range of domains and distributions. 
+    Representation learning approaches seek to extract domain-invariant features, allowing models to leverage stable knowledge across different modalities. 
+    Additionally, many previous studies have concentrated on projecting multimodal information into a shared embedding space. 
+    However, this strategy often overlooks fine-grained modality-specific information, as it tends to preserve only the modality-shared features, potentially limiting the model’s ability to capture unique details from each modality.
+  </p>
+
+  <hr>
+
+  <h3>Strengths</h3>
+  <ol>
+    <li>
+      <strong>Loss function design.</strong> A strength of this paper is the design of multi-modal supervised contrastive learning specifically for modality-shared features. 
+      This loss function encourages the model to bring embeddings of samples with the same class label close together, while pushing those of different classes further apart in the shared feature space. 
+      However, simply aligning modality-shared features and separating modality-specific features is not sufficient for optimal generalization. 
+      To address this limitation, the authors introduce a cross-modal translation module, which exploits implicit relationships captured by modality-specific features. 
+      This module enables the reconstruction or prediction of features in one modality from another, thereby enhancing the model’s ability to leverage complementary information and improving robustness to missing modalities.
+    </li>
+    <li>
+      <strong>HAC Dataset.</strong> To facilitate experiments in multi-modal domain generalization, the authors introduce a new dataset specifically designed to test generalization across domains. 
+      This dataset includes 3 modalities and 7 action categories, providing a rich environment for evaluating both modality-specific and modality-shared feature representations. 
+      The inclusion of multiple modalities and diverse actions enables comprehensive analysis of how well models can disentangle and leverage shared versus unique information, making it a valuable resource for advancing research in multi-modal domain generalization.
+    </li>
+    <li>
+      <strong>Experiments.</strong> In this paper, the authors conduct a wide range of experiments, with the multi-modal single-source domain generalization (DG) and missing-modality DG settings being particularly noteworthy. 
+      They evaluate their method using both pairs of modalities and all available modalities, demonstrating that the approach is not limited to any specific modality combination. 
+      Notably, their results show that simply setting missing modalities to zero is suboptimal, as it can degrade performance. 
+      Instead, the proposed cross-modal translation module offers a more effective solution for handling missing modalities by enabling the model to reconstruct or predict features in one modality using information from another, thus improving robustness and generalization in practical multi-modal scenarios.
+    </li>
+  </ol>
+
+  <hr>
+
+  <h3>Weaknesses</h3>
+  <ol>
+    <li>
+      <strong>Feature splitting.</strong> One weakness of this paper is that, while the authors theoretically motivate splitting features into modality-specific and modality-shared components, 
+      they do not provide a detailed explanation or justification for how this split is implemented in the methodology section. 
+      In practice, their approach simply divides the feature vector in half, assigning one half to modality-specific features and the other half to modality-shared features. 
+      This heuristic choice appears somewhat arbitrary and lacks empirical or theoretical support, raising questions about whether this partitioning is optimal or generalizable across different tasks and modalities.
+    </li>
+    <li>
+      <strong>Cross-modal Translation.</strong> The design is translating the i-th modality feature to j-th modality feature. 
+      However, like the paper states that, different modality features contain shared features and unique features. 
+      Does the translation undermine the unique features in different modalities?
+    </li>
+  </ol>
+
+  <hr>
+
+  <h3>Future Work</h3>
+  <p>
+    This paper addresses domain generalization through representation learning, offering a simple yet effective framework. 
+    While the approach is not novel in the broader context of domain generalization, its simplicity is a strength. 
+    However, representation learning methods like this may have inherent limitations, such as an upper bound on the number of modalities that can be effectively integrated within the framework. 
+    Future work could investigate the maximum number of modalities that can be leveraged before performance saturates or degrades, and explore strategies to scale beyond this limit. 
+    Additionally, other promising approaches in domain generalization, such as meta-learning, gradient-based optimization, and self-supervised learning, warrant further exploration and integration, 
+    particularly meta-learning, which could provide adaptive capabilities to better handle domain shifts in multimodal settings.
+  </p>
+
+  <hr>
+
+  <p><em>— TC Chen</em></p>
+
+</div>
+
         <br>
+
         
         
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
