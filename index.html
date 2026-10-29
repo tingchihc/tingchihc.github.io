@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
     <link rel="canonical" href="https:/tingchihc.github.io/"> <script src="/assets/js/theme.js?a5b97ea1f2e681051e5ed6527fe3afc4"></script>
     <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
-    <script>initTheme();</script> </head> <body class="fixed-top-nav "> <header>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="/assets/css/refresh.css">
+    <script>initTheme();</script> </head> <body class="fixed-top-nav home"> <header>
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
     
     <div class="container">
@@ -46,71 +49,51 @@
       
         </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header>
       
-      <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> <span class="font-weight-bold">Ting-Chih</span> Chen </h1> 
-        
-      <p class="desc"> <!-- <a href="https://cs.vt.edu/"> Virginia Tech.</a>  ML Engineer.</p> --> </header> 
-        
-      <article> <div class="profile float-right" style="margin-left: 30px;">
-        
-        <figure style="width: 120%; margin-left: -10%;">
-        <picture>
-        <img src="/assets/img/001.jpg"
-             class="img-fluid z-depth-1 rounded"
-             width="100%"
-             height="auto"
-             alt="prof_pic.jpg"
-             loading="eager">
-        </picture>
-        </figure>
-        
-        <div class="more-info" style="text-align: center;">
-        <p> <a href="mailto:Tingchih.c@gmail.com">Email</a> / <a href="https://scholar.google.com/citations?user=b-Nbn_QAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> </p>
-        </div>
-      
-      </div> 
-        
-        <div class="clearfix">
+            <div class="home-wrap" role="main">
+        <div class="home-grid">
+
+          <aside class="home-side">
+            <figure class="home-photo">
+              <img src="/assets/img/profile_2026.jpg" width="1000" height="1500" alt="Ting-Chih Chen" loading="eager">
+            </figure>
+            <div>
+              <h1 class="home-name">Ting-Chih Chen</h1>
+              <p class="home-role">PhD student · Vrije Universiteit Amsterdam</p>
+              <ul class="home-links">
+                <li><a href="mailto:Tingchih.c@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.2V17h16V7.2l-8 5.3-8-5.3zM5.5 7 12 11.3 18.5 7h-13z"/></svg>Email</a></li>
+                <li><a href="https://scholar.google.com/citations?user=b-Nbn_QAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zm-6.5 9.6V16c0 1.9 2.9 4 6.5 4s6.5-2.1 6.5-4v-3.4L12 16.1l-6.5-3.5z"/></svg>Google Scholar</a></li>
+                <li><a href="https://www.linkedin.com/in/ting-chih-chen/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>LinkedIn</a></li>
+              </ul>
+            </div>
+          </aside>
+
+          <article class="home-main">
+            <p class="home-eyebrow">About</p>
+            <p class="home-lead">I study <em>multimodal alignment with common sense</em> — how models connect what they see and read to the way the world actually works.</p>
 
             <p>I am currently a PhD student at Vrije Universiteit Amsterdam, working under the supervision of Professor <a href="https://www.emilevankrieken.com">Emile van Krieken</a>, Professor <a href="https://www.ilievski.info">Filip Ilievski</a> and Professor <a href="https://sjyucnel.github.io">Shujian Yu</a>. My research focuses on Multimodal Alignment with Common Sense.</p>
             <p>Previously, I worked as a Machine Learning Engineer, developing recommendation systems for shopping malls and managed the Customer Data Platform. Before that, I earned my Master’s in Computer Science at Virginia Tech, conducting research on detecting disinformation under the guidance of Professor <a href="https://people.cs.vt.edu/chris/">Chris Thomas</a>. My work involved developing language models using RLHF and PPO, and integrating cross-modal information into knowledge graphs for fine-grained detection of real and fake information.</p>
-            
-            <!-- <p>I am currently a Machine Learning Engineer at Ret[AI]ling Data, where I focus on developing recommendation systems for shopping malls. My main contribution is designing personalized shopping experiences by leveraging advanced machine learning algorithms. In addition to this, I manage and maintain the Customer Data Platform, which helps the company gain valuable insights into consumer behavior and trends in the retail domain. This work plays a role in optimizing the shopping experience for customers and driving business growth.</p> -->
-            <!-- <p>Previously, I completed my Master’s in Computer Science at Virginia Tech, where I conducted research on detecting disinformation. Under the guidance of <a href="https://people.cs.vt.edu/chris/">Professor Chris Thomas</a>, my work focused on developing language models using RLHF and PPO. Additionally, I integrated cross-modal information into knowledge graphs to detect disinformation at a fine-grained level, aiming to distinguish between real and fake information effectively.</p> -->
-            <!-- <p>In addition to my professional and academic work, I run an <a href="https://github.com/tingchihc/embodied-AI-reading-list">online scene representation reading list</a>. This resource serves as a curated collection of research and papers, helping individuals stay up-to-date with advancements in scene representation and related areas. Feel free to visit the reading list if you're interested in exploring more.</p> -->
-        </div>
-          
-        <h2>News</h2>
-            <div class="news">
-            <div class="table-responsive">
-            <table class="table table-sm table-borderless">
-            <tr>
-            <th scope="row" style="width: 20%">Oct 2026</th>
-            <td>Our work on <b>multimodal meme QA</b> was accepted to <a href="">EMNLP 2026</a>.</td>
-            </tr>
-            <tr>
-            <th scope="row" style="width: 20%">Sep 2025</th>
-            <td>I joined the research teams of Prof. Emile, Prof. Filip, and Prof. Shujian as a PhD student.</td>
-            </tr>
-            <tr> 
-            <th scope="row" style="width: 20%">Sep 2024</th>
-            <td>Our work on <b>multimodal fine-grained inconsistency detection</b> was accepted to <a href="https://aclanthology.org/2024.emnlp-main.1243/">EMNLP 2024</a>.</td>
-            </tr>      
-            <tr>
-            <th scope="row" style="width: 20%">May 2024</th>
-            <td>Our work on <b>multidocument, multimodal evidence summarization</b> was accepted to <a href="https://aclanthology.org/2024.acl-long.474/">ACL 2024</a>.</td>
-            </tr>    
-            <tr> 
-            <th scope="row" style="width: 20%">Dec 2023</th> 
-            <td>I defended my MS thesis.</td>
-            </tr>
-            <tr>
-            <th scope="row" style="width: 20%">Nov 2023</th>
-            <td>Our work on fine-grained multidocument multimodal inconsistency checking was featured in Columbia Engineering Magazine (“<a href="https://topics.engineering.columbia.edu/when-trust-is-a-factor/">When Trust Is a Factor</a>”)</td>
-            </tr>
-            </table>
-            </div>
-            </div>
-        
+
+            <section class="home-section">
+              <h2>News</h2>
+              <ol class="home-news">
+                <li><time>Oct 2026</time><span>Our work on <b>multimodal meme QA</b> was accepted to <a href="https://aclanthology.org/2026.emnlp-main.164/">EMNLP 2026</a>.</span></li>
+                <li><time>Sep 2025</time><span>I joined the research teams of Prof. Emile, Prof. Filip, and Prof. Shujian as a PhD student.</span></li>
+                <li><time>Sep 2024</time><span>Our work on <b>multimodal fine-grained inconsistency detection</b> was accepted to <a href="https://aclanthology.org/2024.emnlp-main.1243/">EMNLP 2024</a>.</span></li>
+                <li><time>May 2024</time><span>Our work on <b>multidocument, multimodal evidence summarization</b> was accepted to <a href="https://aclanthology.org/2024.acl-long.474/">ACL 2024</a>.</span></li>
+                <li><time>Dec 2023</time><span>I defended my MS thesis.</span></li>
+                <li><time>Nov 2023</time><span>Our work on fine-grained multidocument multimodal inconsistency checking was featured in Columbia Engineering Magazine (“<a href="https://topics.engineering.columbia.edu/when-trust-is-a-factor/">When Trust Is a Factor</a>”)</span></li>
+              </ol>
+            </section>
+
+            <section class="home-section">
+              <h2>Service</h2>
+              <div class="home-service">
+                <span class="label">Reviewer</span>
+                <span class="home-chip"><b>WWW</b> The ACM Web Conference</span>
+              </div>
+            </section>
+
           <!-- 
         <h2>Selected Publications</h2>
             <div class="publications">
@@ -191,7 +174,9 @@
                     <a href="https://scholar.google.com/citations?user=b-Nbn_QAAAAJ&hl=en" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>    
                 </div> -->
                             
-            </div> </article> </div> </div> 
+            </article>
+        </div>
+      </div> 
         
                         
         
