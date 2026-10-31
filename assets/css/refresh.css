@@ -47,6 +47,10 @@ body.refresh .navbar a { background-image: none; }
 .home-lead em { font-style: italic; color: var(--global-theme-color); }
 .home-main p { font-size: 1.02rem; line-height: 1.75; }
 
+.home-main .home-collab { margin: 28px 0 0; padding: 16px 20px; border-left: 4px solid var(--global-theme-color); border-radius: 0 12px 12px 0; background: var(--home-accent-soft); }
+.home-collab strong { color: var(--global-theme-color); font-weight: 600; margin-right: 4px; }
+.home-collab em { font-style: normal; font-weight: 600; }
+
 .home-section { margin-top: 56px; }
 .home-section h2 { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 1.35rem; margin: 0 0 20px; padding-bottom: 10px; border-bottom: 1px solid var(--home-line); color: var(--global-text-color); }
 
