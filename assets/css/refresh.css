@@ -62,7 +62,7 @@ body.refresh .navbar a { background-image: none; }
 .home-news time { font-size: .82rem; font-weight: 600; color: var(--home-muted); padding-top: 2px; white-space: nowrap; }
 
 .home-service { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-.home-service .label { flex-basis: 100%; font-size: .9rem; color: var(--home-muted); }
+.home-service .label { font-size: .9rem; color: var(--home-muted); margin-right: 4px; }
 .home-chip { display: inline-flex; align-items: baseline; gap: 6px; padding: 7px 14px; border-radius: 10px; background: var(--home-accent-soft); color: var(--global-text-color); font-size: .9rem; }
 .home-chip b { color: var(--global-theme-color); font-weight: 600; }
 
